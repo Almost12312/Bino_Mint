@@ -243,6 +243,32 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "MAX_WALLET_TOKENS",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "MINT_PER_TX",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -277,6 +303,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "flipState",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -323,16 +356,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "mintPerTx",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_amountTokens",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -472,6 +505,32 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "uri",
+						"type": "string"
+					}
+				],
+				"name": "setBaseUri",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "setPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "bytes4",
 						"name": "interfaceId",
 						"type": "bytes4"
@@ -567,6 +626,13 @@
 				"name": "transferOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawAll",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			}
 		],
@@ -722,7 +788,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/NFT.sol": "NFT"
+			"Bino_Mint/contracts/NFT.sol": "NFT"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -832,12 +898,12 @@
 				"dweb:/ipfs/QmVBEei6aTnvYNZp2CHYVNKyZS4q1KkjANfY39WVXZXVoT"
 			]
 		},
-		"contracts/NFT.sol": {
-			"keccak256": "0xffbec68d0e590a8bf11b7d37ca7dc781a4b7dc39d6db115c398c1460e3a7747f",
+		"Bino_Mint/contracts/NFT.sol": {
+			"keccak256": "0x225717cfae0dddae36fdcf43f6c7279ed195c6948c7a676f7748fa07915ccf50",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://40591fdde9ebd054b174d6cd81a7c8d95dff142b4c9d8f2bbeb29ed1f0e23033",
-				"dweb:/ipfs/QmcRHFt1bafp3ynKs7ktTDLL3cQYfChjfZhPG651dZ4DUf"
+				"bzz-raw://089c222c30998b73751d9d0930dd3852807593d4eacd872f069db8870cbeb4d4",
+				"dweb:/ipfs/QmNVJbtSkzoX5cdVNYasJh8EK2Hs9w63hhQ8zFfUTGUx7j"
 			]
 		}
 	},
